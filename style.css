@@ -288,50 +288,232 @@ header .search-bar-container label:hover {
     padding: 1rem 0;
     color: #666;
 }
-.pakages .box-container {
+.packages .box-container {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
 }
-.pakages .box-container .box {
+.packages .box-container .box {
     flex: 1 1 30rem;
     border-radius: .5rem;
     overflow: hidden;
     box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
 }
-.pakages .box-container .box img {
+.packages .box-container .box img {
     height: 25rem;
     width: 100%;
     object-fit: cover;
 }
-.pakages .box-container .box .content {
+.packages .box-container .box .content {
     padding: 2rem;
 }
-.pakages .box-container .box .content h3 {
+.packages .box-container .box .content h3 {
     font-size: 2rem;
     color: #333;
 }
-.pakages .box-container .box .content h3 i {
+.packages .box-container .box .content h3 i {
     color: var(--orange);
 }
-.pakages .box-container .box .content p {
+.packages .box-container .box .content p {
     font-size: 1.7rem;
     color: #666;
     padding: 1rem 0;
 }
-.pakages .box-container .box .content .stars i {
+.pacages .box-container .box .content .stars i {
     font-size: 1.7rem;
     color: var(--orange);
 }
-.pakages .box-container .box .content .price {
+.packages .box-container .box .content .price {
     font-size: 2rem;
     color: #333;
     padding-top: 1rem;
 }
-.pakages .box-container .box .content .price span {
+.packages .box-container .box .content .price span {
     color: #666;
     font-size: 1.5rem;
     text-decoration: line-through;
+}
+.services .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.services .box-container .box {
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: center;
+}
+.services .box-container .box i {
+    padding: 1rem;
+    font-size: 5rem;
+    color: var(--orange);
+}
+.services .box-container .box h3 {
+    font-size: 2.5rem;
+    color: #333;
+}
+.services .box-container .box p {
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+}
+.services .box-container .box:hover {
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+}
+.gallery .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.gallery .box-container .box {
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border: 1rem solid #FFF;
+    border-radius: .5rem;
+    flex: 1 1 30rem;
+    height: 25rem;
+    position: relative;
+}
+.gallery .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.gallery .box-container .box .content {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: rgba(0,0,0,.7);
+    padding: 2rem;
+    padding-top: 5rem;
+}
+.gallery .box-container .box:hover .content {
+    top: 0;
+}
+.gallery .box-container .box .content h3 {
+    font-size: 2.5rem;
+    color: var(--orange);
+}
+.gallery .box-container .box .content p {
+    font-size: 1.5rem;
+    color: #eee;
+    padding: .5rem 0;
+}
+.review .review-slider {
+    padding-bottom: 2rem;
+}
+.review .box {
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+}
+.review .box img {
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.review .box h3 {
+    color: #333;
+    font-size: 2.5rem;
+}
+.review .box p {
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.review .box .stars i {
+    color: var(--orange);
+    font-size: 1.7rem;
+}
+.contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.contact .row .images {
+    flex: 1 1 35rem;
+}
+.contact .row .images img {
+    width: 100%;
+}
+.contact .row form {
+    flex: 1 1 50rem;
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+}
+.contact .row form .inputBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact .row form .inputBox input,
+.contact .row form textarea {
+    width: 49%;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    background: #F7F7F7;
+    text-transform: none;
+}
+.contact .row form textarea {
+    height: 15rem;
+    width: 100%;
+}
+.brand-container {
+    text-align: center;
+}
+.footer {
+    background: #333;
+}
+.footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.footer .box-container .box {
+    padding: 1rem 0;
+    flex: 1 1 25rem;
+}
+.footer .box-container .box h3 {
+    font-size: 2.5rem;
+    padding: .7rem 0;
+    color: #FFF;
+}
+.footer .box-container .box p {
+    font-size: 1.5rem;
+    padding: .7rem 0;
+    color: #EEE;
+}
+.footer .box-container .box a {
+    display: block;
+    font-size: 1.5rem;
+    padding: .7rem 0;
+    color: #EEE;
+}
+.footer .box-container .box a:hover {
+    color: var(--orange);
+    text-decoration: underline;
+}
+.footer .credit {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #FFF;
+    border-top: .1rem solid rgba(255,255,255,.2);
+}
+.footer .credit span {
+    color: var(--orange);
 }
 
 
@@ -405,5 +587,9 @@ header .search-bar-container label:hover {
     }
     .heading span {
         font-size: 2.5rem;
+    }
+    
+    .contact .row form .inputBox input {
+        width: 100%;
     }
 }
